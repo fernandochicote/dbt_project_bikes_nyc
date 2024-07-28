@@ -8,6 +8,10 @@ Este proyecto utiliza dbt (Data Build Tool) y DuckDB para procesar y analizar da
 
 El proyecto se basa en datos públicos proporcionados por Citi Bike, un sistema de bicicletas compartidas en Nueva York. Los datos incluyen información detallada sobre cada viaje realizado, como el tipo de bicicleta, las estaciones de inicio y finalización, y los tiempos de cada viaje.
 
+[Citi Bike System Data](https://citibikenyc.com/system-data)
+
+[Datos](https://s3.amazonaws.com/tripdata/index.html)
+
 ## Descripción de los Datos
 
 Los datos de Citi Bike incluyen las siguientes columnas:
