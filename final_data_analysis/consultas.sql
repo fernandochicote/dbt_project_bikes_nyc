@@ -3,7 +3,7 @@ select
     rideable_type,
     round(avg(ride_duration_minutes), 2) as avg_ride_duration_minutes,
     round(avg(ride_distance_km), 2) as avg_ride_distance_km
-from enriched_bike_trips
+from fact_bike_trips
 group by rideable_type
 order by rideable_type;
 
@@ -17,7 +17,7 @@ select
     end_station_name,
     round(ride_duration_minutes, 2) as ride_duration_minutes,
     round(ride_distance_km, 2) as ride_distance_km
-from enriched_bike_trips
+from fact_bike_trips
 order by ride_duration_minutes desc
 limit 1;
 
@@ -31,6 +31,6 @@ select
     end_station_name,
     round(ride_duration_minutes, 2) as ride_duration_minutes,
     round(ride_distance_km, 2) as ride_distance_km
-from enriched_bike_trips
+from fact_bike_trips
 order by ride_distance_km desc
 limit 1;
